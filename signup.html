@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Log In</title>
+  <title>Sign Up</title>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
@@ -13,15 +13,15 @@
 <body class="text-center">
 
 
-  <form class="form-signin" action="/login" method="post">
+  <form class="form-signin" action="/signup" method="post">
     <img class="mb-4" src="images/corona.svg" alt="" width="72" height="72">
-    <h1 class="h3 mb-3 font-weight-normal">Log In to your account</h1>
+    <h1 class="h3 mb-3 font-weight-normal">Sign Up</h1>
 
-    <input type="text" name="user" class="form-control" placeholder="Email address" required autofocus>
+    <input type="text" name="user" class="form-control signup-up" placeholder="Email address" required autofocus>
 
-    <input type="password" name="password" class="form-control" placeholder="Password" required>
-
-    <p class="float-right">Dont have an acoount? <a  href="signup">Sign Up</a></p>
+    <input type="password" name="pass" class="form-control signup-mid" placeholder="Password" required>
+    <input type="password" name="confirm" class="form-control signup-down" placeholder="Confirm Password" required>
+    <p class="float-right">Already a member? <a href="/">Log In</a></p>
     <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
     <p class="mt-5 mb-3 text-muted">&copy; ORT Braude - 2020</p>
   </form>
