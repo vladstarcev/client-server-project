@@ -54,6 +54,10 @@ app.post("/signup", function(req,res) {
   res.redirect("/")
 });
 
+app.post("/contact", function(req,res) {
+  
+});
+
 app.listen(3000, function(){
   console.log("server is running on port 3000");
 });
